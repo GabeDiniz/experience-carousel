@@ -7,13 +7,20 @@
 body {
     height: 100vh;
     background-color: beige;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-top: 8rem;
+
+    /* border: red 1px solid; */
+}
+body > * {
+    height: 40vh;
 }
 
 .product-container {
+    flex-grow: 1;
     width: 80vw;
-    height: 70vh;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -87,25 +94,19 @@ body {
 
 .pre-btn, 
 .nxt-btn {
+    width: 5rem;
     border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
     cursor: pointer;
     z-index: 9;
+    /* border: purple 1px solid; */
 }
 
 .nxt-btn {
-    right: 0;
     transform: rotate(180deg);
-}
-.pre-btn {
-    left: 0;
 }
 .pre-btn img, .nxt-btn img {
     width: 2vw;
