@@ -10,17 +10,16 @@ body {
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
-    margin-top: 8rem;
 
-    /* border: red 1px solid; */
+    border: red 1px solid;
 }
 body > * {
-    height: 40vh;
+    margin-top: 5rem;
+    height: 50vh;
 }
 
 .product-container {
     flex-grow: 1;
-    width: 80vw;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -34,7 +33,7 @@ body > * {
 }
 
 .product-card {
-    width: 80%;
+    width: 90%;
     height: 100%;
     position: absolute;
     transition: transform 300ms ease-out;
@@ -99,7 +98,7 @@ body > * {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: rgba(255, 255, 255, 0) 0%;
     cursor: pointer;
     z-index: 9;
     /* border: purple 1px solid; */
