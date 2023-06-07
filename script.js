@@ -1,7 +1,6 @@
 const slides = document.querySelectorAll("[data-slide]");
 const buttons = document.querySelectorAll("[data-button]");
 
-console.log("test", slides, buttons);
 let currSlide = 0;
 let lastSlide = slides.length - 1;
 
