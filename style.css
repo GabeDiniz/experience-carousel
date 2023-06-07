@@ -9,13 +9,15 @@ body {
     background-color: beige;
     display: flex;
     flex-wrap: nowrap;
-    align-items: stretch;
+    justify-content: center;
+    /* align-items: stretch; */
     color: white;
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 body > * {
     margin-top: 5rem;
-    height: 50vh;
+    height: 60vh;
+    /* border: 1px solid salmon; */
 }
 
 .product-container {
@@ -33,7 +35,7 @@ body > * {
 }
 
 .product-card {
-    width: 90%;
+    width: 80%;
     height: 100%;
     position: absolute;
     transition: transform 300ms ease-out;
@@ -48,51 +50,34 @@ body > * {
     filter: blur(2px);
 }
 
-.product-card :not(img) {
-    position: absolute; 
+.product-content {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
-}
-.product-card h1 {
+
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    top: 10%;
 }
 
-.product-card a {
-    top: 20%;
+.product-content h1 {
+    margin: 2rem 0;
 }
 
-.product-card p {
-    top: 50%;
-}
-
-.tag {
-    position: absolute;
-    background: white;
-    padding: 5px;
-    border-radius: 5px;
-    color: blue;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
-
-.card-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background-color: white;
-    border-radius: 5px;
-    transition: 0.5s;
+.product-content a {
+    color: inherit;
+    text-decoration: underline;
     cursor: pointer;
-    opacity: 0;
+}
+
+.product-content p {
+    margin-top: 10rem;
 }
 
 .product-card:hover .card-btn {
@@ -106,20 +91,23 @@ body > * {
 
 .pre-btn, 
 .nxt-btn {
-    width: 5rem;
+    width: 3rem;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0) 0%;
     cursor: pointer;
-    z-index: 9;
-    /* border: purple 1px solid; */
 }
 
 .nxt-btn {
     transform: rotate(180deg);
+    margin-right: 10rem;
 }
+.pre-btn {
+    margin-left: 10rem;
+}
+
 .pre-btn img, .nxt-btn img {
     width: 2vw;
     opacity: 0.2;
