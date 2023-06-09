@@ -88,11 +88,6 @@ body > * {
     opacity: 1;
 }
 
-.card-btn:hover {
-    background: blue;
-    color: white;   
-}
-
 .pre-btn, 
 .nxt-btn {
     width: 3rem;
