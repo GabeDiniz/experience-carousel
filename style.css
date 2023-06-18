@@ -11,12 +11,12 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     color: white;
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 body > * {
     margin-top: 5rem;
     height: 60vh;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
 
 .project-container {
@@ -25,7 +25,7 @@ body > * {
     place-items: center;
     overflow: hidden;
     position: relative;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
 }
 
 /* removes scrollbar */
@@ -114,3 +114,12 @@ body > * {
 .pre-btn:hover img, .nxt-btn:hover img {
     opacity: 1;
 }
+
+
+@media screen and (max-width: 590px) {
+    .project-content p {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
