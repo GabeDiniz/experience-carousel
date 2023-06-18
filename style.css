@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    /* align-items: stretch; */
     color: white;
     /* border: red 1px solid; */
 }
@@ -35,7 +34,7 @@ body > * {
 }
 
 .project-card {
-    width: 80%;
+    width: 90%;
     height: 100%;
     position: absolute;
     transition: transform 300ms ease-out;
@@ -53,7 +52,6 @@ body > * {
 }
 
 .project-content {
-    /* border: 1px solid green; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -64,9 +62,10 @@ body > * {
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
-
+    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid green; */
 }
 
 .project-content h1 {
